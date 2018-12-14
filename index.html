@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>test</title>
+<title>us - Made my Day</title>
 <meta charset="UTF-8">
+<meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="modal-multi.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
 		<h2>Products</h2>
 		<p>テキストテキスト</p>
 	</div>
-	<div style="width: 100%;background: #eeeeee;height: 200px;">
+	<div style="width: 100%;background: #FFF;height: 200px;">
 	</div>
 
 	<div class="article">
@@ -48,17 +51,17 @@
 
 		<ul>
 			<li>
-				<div class="art"><a href="article_img01.jpg"><img src="article_img01.jpg" width="100%"></a></div>
+				<div class="art"><a class="modal-open" data-target="modal-content-01"><img src="article_img01.jpg" width="100%"></a></div>
 				<h3>Article title</h3>
 				<p class="daily">2019年00月00日</p>
 			</li>
 			<li>
-				<div class="art"><img src="article_img01.jpg" width="100%"></div>
+				<div class="art"><a class="modal-open" data-target="modal-content-02"><img src="main.jpg" width="100%"></a></div>
 				<h3>Article title</h3>
 				<p class="daily">2019年00月00日</p>
 			</li>
 			<li>
-				<div class="art"><img src="article_img01.jpg" width="100%"></div>
+				<div class="art"><a class="modal-open" data-target="modal-content-03"><img src="article_img01.jpg" width="100%"></a></div>
 				<h3>Article title</h3>
 				<p class="daily">2019年00月00日</p>
 			</li>
@@ -66,8 +69,13 @@
 		</ul>
 	</div>
 
+	<div id="modal-content-01"><img src="article_img01.jpg" width="100%"></div>
+	<div id="modal-content-02"><img src="main.jpg" width="100%"></div>
+	<div id="modal-content-03"><img src="article_img01.jpg" width="100%"></div>
+
+
 	<div class="social">
-		<a href="" target="_blank"><img src="instagram.png" alt=" Instagram" width="32" height="32"></a>
+		<a href="https://instagram.com/__shintaro" target="_blank"><img src="instagram.png" alt=" Instagram" width="32" height="32"></a>
 	</div>
 </div>
 
