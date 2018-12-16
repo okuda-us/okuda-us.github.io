@@ -221,6 +221,7 @@ li{
 	}
 	.container .logo img{
 	    width: 100px;
+	    margin-top: 5px;
 	}
 	.mv img{
 	    position: relative;
