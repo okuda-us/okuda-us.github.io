@@ -19,7 +19,7 @@ ul{
 }
 
 #header{
-    height: 100px;
+    height: 40px;
 }
 
 #header .container{
@@ -214,6 +214,9 @@ li{
 @media screen and (max-width: 640px){
 	#header .container{
 	    width: 100%;
+	}
+	.container .logo{
+	    width: 100px;
 	}
 	.mv img{
 	    position: relative;
