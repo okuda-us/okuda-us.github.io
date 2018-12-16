@@ -32,6 +32,10 @@ ul{
     margin: 0 10px;
 }
 
+.container .logo img{
+    width: 160px;
+}
+
 li{
     list-style: none;
 }
@@ -215,7 +219,7 @@ li{
 	#header .container{
 	    width: 100%;
 	}
-	.container .logo{
+	.container .logo img{
 	    width: 100px;
 	}
 	.mv img{
