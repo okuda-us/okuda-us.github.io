@@ -240,15 +240,15 @@ svg {
 }
 
 #full-slide .banner li:nth-child(1) {
-    background-image: url("https://okuda-us.github.io/main.jpg");
+    background-image: url("https://okuda-us.github.io/pic_img_01.jpg");
 }
 
 #full-slide .banner li:nth-child(2) {
-    background-image: url("https://okuda-us.github.io/article_img01.jpg");
+    background-image: url("https://okuda-us.github.io/pic_img_02.jpg");
 }
 
 #full-slide .banner li:nth-child(3) {
-    background-image: url("https://okuda-us.github.io/pic_img_01.jpg");
+    background-image: url("https://okuda-us.github.io/main.jpg");
 }
 
 #full-slide .banner li.active {
