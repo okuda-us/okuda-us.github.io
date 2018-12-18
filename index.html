@@ -7,7 +7,11 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery-2.2.4.min.js"><\/script>')</script>
 <script src="modal-multi.js"></script>
+<script src="functions-min.js"></script>
+
 </head>
 
 <body>
@@ -15,7 +19,7 @@
 <header id="header">
 	<div class="container">
 		<div class="logo">
-			<img src="logo.png" alt="us" width="160">
+			<img src="logo.png" alt="花草と日常" width="160">
 		</div>
 		<div class="nav">
 			<ul>
@@ -32,7 +36,16 @@
 </header>
 
 <div id="main">
-	<div class="mv"><img src="main.jpg" width="100%"></div>
+	<section id="full-slide">
+	      <ul class="banner">
+	        <li class="active"></li>
+	        <li class=""></li>
+	        <li class=""></li>
+	      </ul>
+	      <i class="icon-chevron-thin-left prev"></i>
+	      <i class="icon-chevron-thin-right next"></i>
+    </section>
+
 	<p class="main_ttl">Made my Day</p>
 </div>
 
@@ -77,6 +90,16 @@
 	<div id="modal-content-02"><img src="main.jpg" width="100%"></div>
 	<div id="modal-content-03"><img src="article_img01.jpg" width="100%"></div>
 
+
+	<!--<section id="full-slide">
+      <ul class="banner">
+        <li class="active"></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+      <i class="icon-chevron-thin-left prev"></i>
+      <i class="icon-chevron-thin-right next"></i>
+    </section> -->
 
 	<div class="social">
 		<a href="https://instagram.com/__shintaro" target="_blank"><img src="instagram.png" alt=" Instagram" width="32" height="32"></a>
