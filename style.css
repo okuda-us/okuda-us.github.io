@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     color: #333;
     background: #eee;
+    margin: 0;
 }
 
 h2{
@@ -19,7 +20,8 @@ ul{
 }
 
 #header{
-    height: 40px;
+    height: 60px;
+    margin-top: 10px;
 }
 
 #header .container{
@@ -53,18 +55,6 @@ li{
 #main{
     position: relative;
     display: block;
-}
-
-.mv{
-    width: 100%;
-    max-height: 500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.mv img{
-    position: relative;
-    top: -120%;
 }
 
 #main .main_ttl{
@@ -215,6 +205,113 @@ li{
     z-index: 1;
 }
 
+
+/* スライダーエリア start */
+#full-slide svg {
+    left: 0;
+    opacity: .1;
+    z-index: 9;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg {
+    position: absolute;
+    height: 100%;
+}
+
+#full-slide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#full-slide .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#full-slide .banner li:nth-child(1) {
+    background-image: url("https://okuda-us.github.io/main.jpg");
+}
+
+#full-slide .banner li:nth-child(2) {
+    background-image: url("https://okuda-us.github.io/article_img01.jpg");
+}
+
+#full-slide .banner li:nth-child(3) {
+    background-image: url("https://okuda-us.github.io/main.jpg");
+}
+
+#full-slide .banner li.active {
+    opacity: 1;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
+}
+
+#full-slide .banner li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
+}
+
+#full-slide .next {
+    right: 150px;
+}
+
+#full-slide .prev {
+    left: 150px;
+}
+
+.icon-chevron-thin-right {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 10;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icon-chevron-thin-left {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 10;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+/* スライダーエリア end */
+
 @media screen and (max-width: 640px){
 	#header .container{
 	    width: 100%;
@@ -223,9 +320,22 @@ li{
 	    width: 100px;
 	    margin-top: 5px;
 	}
-	.mv img{
-	    position: relative;
-	    top: 0;
+	#full-slide {
+	    height: 300px;
+	}
+	.icon-chevron-thin-right {
+	    width: 15px;
+	    height: 15px;
+	}
+	.icon-chevron-thin-left {
+	    width: 15px;
+	    height: 15px;
+	}
+	#full-slide .next {
+    	right: 10px;
+	}
+	#full-slide .prev {
+	    left: 10px;
 	}
 	#main .main_ttl {
 	    left: 10%;
