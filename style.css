@@ -183,7 +183,7 @@ li{
   color: #cc0000;
 }
 /* モーダル コンテンツエリア */
-#modal-content-01,#modal-content-02,#modal-content-03 {
+#modal-content-01,#modal-content-02,#modal-content-03,#modal-content-04 {
     display: none;
     max-width: 1000px;
     height: auto;
